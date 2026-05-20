@@ -5,7 +5,7 @@ import prisma from '@/lib/prisma';
 export const syncUserCreation = inngest.createFunction(
   {
     id: 'sync-user-create',
-    triggers: [{ event: 'clerk.user.created' }],
+    triggers: { event: 'clerk.user.created' },
   },
   async ({ event }) => {
     const { data } = event;
@@ -25,7 +25,7 @@ export const syncUserCreation = inngest.createFunction(
 export const syncUserUpdation = inngest.createFunction(
   {
     id: 'sync-user-update',
-    triggers: [{ event: 'clerk.user.updated' }],
+    triggers: { event: 'clerk.user.updated' },
   },
   async ({ event }) => {
     const { data } = event;
@@ -45,7 +45,7 @@ export const syncUserUpdation = inngest.createFunction(
 export const syncUserDeletion = inngest.createFunction(
   {
     id: 'sync-user-delete',
-    triggers: [{ event: 'clerk.user.deleted' }],
+    triggers: { event: 'clerk.user.deleted' },
   },
   async ({ event }) => {
     const { data } = event;
