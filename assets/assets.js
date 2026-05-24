@@ -1,4 +1,4 @@
-import gs_logo from "./gs_logo.jpg"
+import jk_store from "./jk_store.png"
 import happy_store from "./happy_store.webp"
 import upload_area from "./upload_area.svg"
 import hero_model_img from "./hero_model_img.png"
@@ -21,9 +21,10 @@ import profile_pic1 from "./profile_pic1.jpg"
 import profile_pic2 from "./profile_pic2.jpg"
 import profile_pic3 from "./profile_pic3.jpg"
 
+
 export const assets = {
     upload_area, hero_model_img,
-    hero_product_img1, hero_product_img2, gs_logo,
+    hero_product_img1, hero_product_img2, jk_store,
     product_img1, product_img2, product_img3, product_img4, product_img5, product_img6,
     product_img7, product_img8, product_img9, product_img10, product_img11, product_img12,
 }
@@ -31,33 +32,31 @@ export const assets = {
 export const categories = ["Headphones", "Speakers", "Watch", "Earbuds", "Mouse", "Decoration"];
 
 export const dummyRatingsData = [
-    { id: "rat_1", rating: 4.2, review: "I was a bit skeptical at first, but this product turned out to be even better than I imagined. The quality feels premium, it's easy to use, and it delivers exactly what was promised. I've already recommended it to friends and will definitely purchase again in the future.", user: { name: 'Kristin Watson', image: profile_pic1 }, productId: "prod_1", createdAt: 'Sat Jul 19 2025 14:51:25 GMT+0530 (India Standard Time)', updatedAt: 'Sat Jul 19 2025 14:51:25 GMT+0530 (India Standard Time)', product: { name: 'Bluetooth Speakers', category:'Electronics', id:'prod_1'} },
-    { id: "rat_2", rating: 5.0, review: "This product is great. I love it!  You made it so simple. My new site is so much faster and easier to work with than my old site.", user: { name: 'Jenny Wilson', image: profile_pic2 }, productId: "prod_2", createdAt: 'Sat Jul 19 2025 14:51:25 GMT+0530 (India Standard Time)', updatedAt: 'Sat Jul 19 2025 14:51:25 GMT+0530 (India Standard Time)', product: { name: 'Bluetooth Speakers', category:'Electronics', id:'prod_1'} },
-    { id: "rat_3", rating: 4.1, review: "This product is amazing. I love it!  You made it so simple. My new site is so much faster and easier to work with than my old site.", user: { name: 'Bessie Cooper', image: profile_pic3 }, productId: "prod_3", createdAt: 'Sat Jul 19 2025 14:51:25 GMT+0530 (India Standard Time)', updatedAt: 'Sat Jul 19 2025 14:51:25 GMT+0530 (India Standard Time)', product: { name: 'Bluetooth Speakers', category:'Electronics', id:'prod_1'} },
-    { id: "rat_4", rating: 5.0, review: "This product is great. I love it!  You made it so simple. My new site is so much faster and easier to work with than my old site.", user: { name: 'Kristin Watson', image: profile_pic1 }, productId: "prod_4", createdAt: 'Sat Jul 19 2025 14:51:25 GMT+0530 (India Standard Time)', updatedAt: 'Sat Jul 19 2025 14:51:25 GMT+0530 (India Standard Time)', product: { name: 'Bluetooth Speakers', category:'Electronics', id:'prod_1'} },
-    { id: "rat_5", rating: 4.3, review: "Overall, I'm very happy with this purchase. It works as described and feels durable. The only reason I didn't give it five stars is because of a small issue (such as setup taking a bit longer than expected, or packaging being slightly damaged). Still, highly recommend it for anyone looking for a reliable option.", user: { name: 'Jenny Wilson', image: profile_pic2 }, productId: "prod_5", createdAt: 'Sat Jul 19 2025 14:51:25 GMT+0530 (India Standard Time)', updatedAt: 'Sat Jul 19 2025 14:51:25 GMT+0530 (India Standard Time)', product: { name: 'Bluetooth Speakers', category:'Electronics', id:'prod_1'} },
-    { id: "rat_6", rating: 5.0, review: "This product is great. I love it!  You made it so simple. My new site is so much faster and easier to work with than my old site.", user: { name: 'Bessie Cooper', image: profile_pic3 }, productId: "prod_6", createdAt: 'Sat Jul 19 2025 14:51:25 GMT+0530 (India Standard Time)', updatedAt: 'Sat Jul 19 2025 14:51:25 GMT+0530 (India Standard Time)', product: { name: 'Bluetooth Speakers', category:'Electronics', id:'prod_1'} },
+    { id: "rat_1", rating: 4.2, review: "I was a bit skeptical at first, but this product turned out to be even better than I imagined. The quality feels premium, it's easy to use, and it delivers exactly what was promised. I've already recommended it to friends and will definitely purchase again in the future.", user: { name: 'Kristin Watson', image: profile_pic1 }, productId: "prod_1", createdAt: '2025-07-19T14:51:25.000Z', updatedAt: '2025-07-19T14:51:25.000Z', product: { name: 'Bluetooth Speakers', category:'Electronics', id:'prod_1'} },
+    { id: "rat_2", rating: 5.0, review: "This product is great. I love it!  You made it so simple. My new site is so much faster and easier to work with than my old site.", user: { name: 'Jenny Wilson', image: profile_pic2 }, productId: "prod_2", createdAt: '2025-07-19T14:51:25.000Z', updatedAt: '2025-07-19T14:51:25.000Z', product: { name: 'Bluetooth Speakers', category:'Electronics', id:'prod_1'} },
+    { id: "rat_3", rating: 4.1, review: "This product is amazing. I love it!  You made it so simple. My new site is so much faster and easier to work with than my old site.", user: { name: 'Bessie Cooper', image: profile_pic3 }, productId: "prod_3", createdAt: '2025-07-19T14:51:25.000Z', updatedAt: '2025-07-19T14:51:25.000Z', product: { name: 'Bluetooth Speakers', category:'Electronics', id:'prod_1'} },
+    { id: "rat_4", rating: 5.0, review: "This product is great. I love it!  You made it so simple. My new site is so much faster and easier to work with than my old site.", user: { name: 'Kristin Watson', image: profile_pic1 }, productId: "prod_4", createdAt: '2025-07-19T14:51:25.000Z', updatedAt: '2025-07-19T14:51:25.000Z', product: { name: 'Bluetooth Speakers', category:'Electronics', id:'prod_1'} }
 ]
 
 export const dummyStoreData = {
     id: "store_1",
     userId: "user_1",
-    name: "Happy Shop",
-    description: "At Happy Shop, we believe shopping should be simple, smart, and satisfying. Whether you're hunting for the latest fashion trends, top-notch electronics, home essentials, or unique lifestyle products — we've got it all under one digital roof.",
-    username: "happyshop",
-    address: "3rd Floor, Happy Shop , New Building, 123 street , c sector , NY, US",
+    name: "JK Store",
+    description: "JK Store is an online marketplace for electronics, gadgets, and daily essentials.",
+    username: "jk_store",
+    address: "Jaipur, Rajasthan, India",
     status: "approved",
     isActive: true,
-    logo: happy_store,
-    email: "happyshop@example.com",
-    contact: "+0 1234567890",
-    createdAt: "2025-09-04T09:04:16.189Z",
-    updatedAt: "2025-09-04T09:04:44.273Z",
+    logo: jk_store,
+    email: "jaykeshkumar549@gmail.com",
+    contact: "+91 7732900780",
+    createdAt: "2026-05-23T10:00:00.000Z",
+    updatedAt: "2026-05-23T10:15:00.000Z",
     user: {
         id: "user_31dOriXqC4TATvc0brIhlYbwwc5",
-        name: "Great Stack",
-        email: "user.greatstack@gmail.com",
-        image: gs_logo,
+        name: "Jaykesh Kumar",
+        email: "user.jaykeshkumar549@gmail.com",
+        image: jk_store,
     }
 }
 
@@ -74,8 +73,8 @@ export const productDummyData = [
         inStock: true,
         store: dummyStoreData,
         rating: dummyRatingsData,
-        createdAt: 'Sat Jul 29 2025 14:51:25 GMT+0530 (India Standard Time)',
-        updatedAt: 'Sat Jul 29 2025 14:51:25 GMT+0530 (India Standard Time)',
+        createdAt: 'Sat Jul 29 2026 14:51:25 GMT+0530 (India Standard Time)',
+        updatedAt: 'Sat Jul 29 2026 14:51:25 GMT+0530 (India Standard Time)',
     },
     {
         id: "prod_2",
@@ -89,8 +88,8 @@ export const productDummyData = [
         store: dummyStoreData,
         category: "Speakers",
         rating: dummyRatingsData,
-        createdAt: 'Sat Jul 28 2025 14:51:25 GMT+0530 (India Standard Time)',
-        updatedAt: 'Sat Jul 28 2025 14:51:25 GMT+0530 (India Standard Time)',
+        createdAt: 'Sat Jul 28 2026 14:51:25 GMT+0530 (India Standard Time)',
+        updatedAt: 'Sat Jul 28 2026 14:51:25 GMT+0530 (India Standard Time)',
     },
     {
         id: "prod_3",
@@ -104,8 +103,8 @@ export const productDummyData = [
         store: dummyStoreData,
         category: "Watch",
         rating: dummyRatingsData,
-        createdAt: 'Sat Jul 27 2025 14:51:25 GMT+0530 (India Standard Time)',
-        updatedAt: 'Sat Jul 27 2025 14:51:25 GMT+0530 (India Standard Time)',
+        createdAt: 'Sat Jul 27 2026 14:51:25 GMT+0530 (India Standard Time)',
+        updatedAt: 'Sat Jul 27 2026 14:51:25 GMT+0530 (India Standard Time)',
     },
     {
         id: "prod_4",
@@ -119,8 +118,8 @@ export const productDummyData = [
         store: dummyStoreData,
         category: "Headphones",
         rating: dummyRatingsData,
-        createdAt: 'Sat Jul 26 2025 14:51:25 GMT+0530 (India Standard Time)',
-        updatedAt: 'Sat Jul 26 2025 14:51:25 GMT+0530 (India Standard Time)',
+        createdAt: 'Sat Jul 26 2026 14:51:25 GMT+0530 (India Standard Time)',
+        updatedAt: 'Sat Jul 26 2026 14:51:25 GMT+0530 (India Standard Time)',
     },
     {
         id: "prod_5",
@@ -134,8 +133,8 @@ export const productDummyData = [
         store: dummyStoreData,
         category: "Watch",
         rating: [...dummyRatingsData,...dummyRatingsData],
-        createdAt: 'Sat Jul 25 2025 14:51:25 GMT+0530 (India Standard Time)',
-        updatedAt: 'Sat Jul 25 2025 14:51:25 GMT+0530 (India Standard Time)',
+        createdAt: 'Sat Jul 25 2026 14:51:25 GMT+0530 (India Standard Time)',
+        updatedAt: 'Sat Jul 25 2026 14:51:25 GMT+0530 (India Standard Time)',
     },
     {
         id: "prod_6",
@@ -149,8 +148,8 @@ export const productDummyData = [
         store: dummyStoreData,
         category: "Camera",
         rating: [...dummyRatingsData,...dummyRatingsData],
-        createdAt: 'Sat Jul 25 2025 14:51:25 GMT+0530 (India Standard Time)',
-        updatedAt: 'Sat Jul 25 2025 14:51:25 GMT+0530 (India Standard Time)',
+        createdAt: 'Sat Jul 25 2026 14:51:25 GMT+0530 (India Standard Time)',
+        updatedAt: 'Sat Jul 25 2026 14:51:25 GMT+0530 (India Standard Time)',
     },
     {
         id: "prod_7",
@@ -164,8 +163,8 @@ export const productDummyData = [
         store: dummyStoreData,
         category: "Pen",
         rating: [...dummyRatingsData,...dummyRatingsData],
-        createdAt: 'Sat Jul 24 2025 14:51:25 GMT+0530 (India Standard Time)',
-        updatedAt: 'Sat Jul 24 2025 14:51:25 GMT+0530 (India Standard Time)',
+        createdAt: '2026-05-23T10:00:00.000Z',
+        updatedAt: '2026-05-23T10:00:00.000Z',
     },
     {
         id: "prod_8",
@@ -179,8 +178,8 @@ export const productDummyData = [
         store: dummyStoreData,
         category: "Theater",
         rating: [...dummyRatingsData,...dummyRatingsData],
-        createdAt: 'Sat Jul 23 2025 14:51:25 GMT+0530 (India Standard Time)',
-        updatedAt: 'Sat Jul 23 2025 14:51:25 GMT+0530 (India Standard Time)',
+        createdAt: '2026-05-23T10:00:00.000Z',
+        updatedAt: '2026-05-23T10:00:00.000Z',
     },
     {
         id: "prod_9",
@@ -194,8 +193,8 @@ export const productDummyData = [
         store: dummyStoreData,
         category: "Earbuds",
         rating: [...dummyRatingsData,...dummyRatingsData],
-        createdAt: 'Sat Jul 22 2025 14:51:25 GMT+0530 (India Standard Time)',
-        updatedAt: 'Sat Jul 22 2025 14:51:25 GMT+0530 (India Standard Time)',
+        createdAt: '2026-05-23T10:00:00.000Z',
+        updatedAt: '2026-05-23T10:00:00.000Z',
     },
     {
         id: "prod_10",
@@ -209,8 +208,8 @@ export const productDummyData = [
         store: dummyStoreData,
         category: "Watch",
         rating: [...dummyRatingsData,...dummyRatingsData],
-        createdAt: 'Sat Jul 21 2025 14:51:25 GMT+0530 (India Standard Time)',
-        updatedAt: 'Sat Jul 21 2025 14:51:25 GMT+0530 (India Standard Time)',
+        createdAt: '2026-05-23T10:00:00.000Z',
+        updatedAt: '2026-05-23T10:00:00.000Z',
     },
     {
         id: "prod_11",
@@ -224,8 +223,8 @@ export const productDummyData = [
         store: dummyStoreData,
         category: "Mouse",
         rating: [...dummyRatingsData,...dummyRatingsData],
-        createdAt: 'Sat Jul 20 2025 14:51:25 GMT+0530 (India Standard Time)',
-        updatedAt: 'Sat Jul 20 2025 14:51:25 GMT+0530 (India Standard Time)',
+        createdAt: '2026-05-23T10:00:00.000Z',
+        updatedAt: '2026-05-23T10:00:00.000Z',
     },
     {
         id: "prod_12",
@@ -239,8 +238,8 @@ export const productDummyData = [
         store: dummyStoreData,
         category: "Cleaner",
         rating: [...dummyRatingsData,...dummyRatingsData],
-        createdAt: 'Sat Jul 19 2025 14:51:25 GMT+0530 (India Standard Time)',
-        updatedAt: 'Sat Jul 19 2025 14:51:25 GMT+0530 (India Standard Time)',
+        createdAt: '2026-05-23T10:00:00.000Z',
+        updatedAt: '2026-05-23T10:00:00.000Z',
     }
 ];
 
@@ -253,30 +252,30 @@ export const ourSpecsData = [
 export const addressDummyData = {
     id: "addr_1",
     userId: "user_1",
-    name: "John Doe",
-    email: "johndoe@example.com",
-    street: "123 Main St",
-    city: "New York",
-    state: "NY",
-    zip: "10001",
-    country: "USA",
-    phone: "1234567890",
-    createdAt: 'Sat Jul 19 2025 14:51:25 GMT+0530 (India Standard Time)',
+    name: "Jaykesh Kumar",
+    email: "jaykeshkumar549@gmail.com",
+    street: "Gopal bari vistar, jaipur",
+    city: "Jaipur",
+    state: "RJ",
+    zip: "302029",
+    country: "INDIA",
+    phone: "+91 7732900780",
+    createdAt: "2026-05-23T10:00:00.000Z",
 }
 
 export const couponDummyData = [
-    { code: "NEW20", description: "20% Off for New Users", discount: 20, forNewUser: true, forMember: false, isPublic: false, expiresAt: "2026-12-31T00:00:00.000Z", createdAt: "2025-08-22T08:35:31.183Z" },
-    { code: "NEW10", description: "10% Off for New Users", discount: 10, forNewUser: true, forMember: false, isPublic: false, expiresAt: "2026-12-31T00:00:00.000Z", createdAt: "2025-08-22T08:35:50.653Z" },
-    { code: "OFF20", description: "20% Off for All Users", discount: 20, forNewUser: false, forMember: false, isPublic: false, expiresAt: "2026-12-31T00:00:00.000Z", createdAt: "2025-08-22T08:42:00.811Z" },
-    { code: "OFF10", description: "10% Off for All Users", discount: 10, forNewUser: false, forMember: false, isPublic: false, expiresAt: "2026-12-31T00:00:00.000Z", createdAt: "2025-08-22T08:42:21.279Z" },
-    { code: "PLUS10", description: "20% Off for Members", discount: 10, forNewUser: false, forMember: true, isPublic: false, expiresAt: "2027-03-06T00:00:00.000Z", createdAt: "2025-08-22T11:38:20.194Z" }
+    { code: "NEW20", description: "20% Off for New Users", discount: 20, forNewUser: true, forMember: false, isPublic: false, expiresAt: "2026-12-31T00:00:00.000Z", createdAt: "2026-08-22T08:35:31.183Z" },
+    { code: "NEW10", description: "10% Off for New Users", discount: 10, forNewUser: true, forMember: false, isPublic: false, expiresAt: "2026-12-31T00:00:00.000Z", createdAt: "2026-08-22T08:35:50.653Z" },
+    { code: "OFF20", description: "20% Off for All Users", discount: 20, forNewUser: false, forMember: false, isPublic: false, expiresAt: "2026-12-31T00:00:00.000Z", createdAt: "2026-08-22T08:42:00.811Z" },
+    { code: "OFF10", description: "10% Off for All Users", discount: 10, forNewUser: false, forMember: false, isPublic: false, expiresAt: "2026-12-31T00:00:00.000Z", createdAt: "2026-08-22T08:42:21.279Z" },
+    { code: "PLUS10", description: "20% Off for Members", discount: 10, forNewUser: false, forMember: true, isPublic: false, expiresAt: "2027-03-06T00:00:00.000Z", createdAt: "2026-08-22T11:38:20.194Z" }
 ]
 
 export const dummyUserData = {
     id: "user_31dQbH27HVtovbs13X2cmqefddM",
-    name: "GreatStack",
-    email: "greatstack@example.com",
-    image: gs_logo,
+    name: "Jaykesh Kumar",
+    email: "jaykeshkumar549@gmail.com",
+    image: jk_store,
     cart: {}
 }
 
@@ -290,8 +289,8 @@ export const orderDummyData = [
         addressId: "cmemm6g95001ftat8omv9b883",
         isPaid: false,
         paymentMethod: "COD",
-        createdAt: "2025-08-22T09:15:03.929Z",
-        updatedAt: "2025-08-22T09:15:50.723Z",
+        createdAt: "2026-08-22T09:15:03.929Z",
+        updatedAt: "2026-08-22T09:15:50.723Z",
         isCouponUsed: true,
         coupon: dummyRatingsData[2],
         orderItems: [
@@ -310,8 +309,8 @@ export const orderDummyData = [
         addressId: "cmemm6g95001ftat8omv9b883",
         isPaid: false,
         paymentMethod: "COD",
-        createdAt: "2025-08-22T09:14:35.923Z",
-        updatedAt: "2025-08-22T09:15:52.535Z",
+        createdAt: "2026-08-22T09:14:35.923Z",
+        updatedAt: "2026-08-22T09:15:52.535Z",
         isCouponUsed: true,
         coupon: couponDummyData[0],
         orderItems: [
@@ -328,33 +327,33 @@ export const storesDummyData = [
     {
         id: "cmemkb98v0001tat8r1hiyxhn",
         userId: "user_31dOriXqC4TATvc0brIhlYbwwc5",
-        name: "GreatStack",
-        description: "GreatStack is the education marketplace where you can buy goodies related to coding and tech",
-        username: "greatstack",
-        address: "123 Maplewood Drive Springfield, IL 62704 USA",
+        name: "Jaykesh Kumar",
+        description: "Jaykesh Kumar is the education marketplace where you can buy goodies related to coding and tech",
+        username: "jaykeshkumar",
+        address: "Jaipur, Rajasthan, India",
         status: "approved",
         isActive: true,
-        logo: gs_logo,
-        email: "greatstack@example.com",
-        contact: "+0 1234567890",
-        createdAt: "2025-08-22T08:22:16.189Z",
-        updatedAt: "2025-08-22T08:22:44.273Z",
+        logo: jk_store,
+        email: "jaykeshkumar549@gmail.com",
+        contact: "+91 7732900780",
+        createdAt: "2026-08-22T08:22:16.189Z",
+        updatedAt: "2026-08-22T08:22:44.273Z",
         user: dummyUserData,
     },
     {
         id: "cmemkqnzm000htat8u7n8cpte",
         userId: "user_31dQbH27HVtovbs13X2cmqefddM",
-        name: "Happy Shop",
-        description: "At Happy Shop, we believe shopping should be simple, smart, and satisfying. Whether you're hunting for the latest fashion trends, top-notch electronics, home essentials, or unique lifestyle products — we've got it all under one digital roof.",
-        username: "happyshop",
-        address: "3rd Floor, Happy Shop , New Building, 123 street , c sector , NY, US",
+        name: "JK Store",
+        description: "JK Store is an online marketplace for electronics, gadgets, and daily essentials.",
+        username: "jk store",
+        address: "Jaipur, Rajasthan, India",
         status: "approved",
         isActive: true,
-        logo: happy_store,
-        email: "happyshop@example.com",
-        contact: "+0 123456789",
-        createdAt: "2025-08-22T08:34:15.155Z",
-        updatedAt: "2025-08-22T08:34:47.162Z",
+        logo: jk_store,
+        email: "jaykeshkumar549@gmail.com",
+        contact: "+91 7732900780",
+        createdAt: "2026-05-23T10:00:00.000Z",
+        updatedAt: "2026-05-23T10:15:00.000Z",
         user: dummyUserData,
     }
 ]
@@ -365,22 +364,22 @@ export const dummyAdminDashboardData = {
     "products": 12,
     "revenue": "959.10",
     "allOrders": [
-        { "createdAt": "2025-08-20T08:46:58.239Z", "total": 145.6 },
-        { "createdAt": "2025-08-22T08:46:21.818Z", "total": 97.2 },
-        { "createdAt": "2025-08-22T08:45:59.587Z", "total": 54.4 },
-        { "createdAt": "2025-08-23T09:15:03.929Z", "total": 214.2 },
-        { "createdAt": "2025-08-23T09:14:35.923Z", "total": 421.6 },
-        { "createdAt": "2025-08-23T11:44:29.713Z", "total": 26.1 },
-        { "createdAt": "2025-08-24T09:15:03.929Z", "total": 214.2 },
-        { "createdAt": "2025-08-24T09:14:35.923Z", "total": 421.6 },
-        { "createdAt": "2025-08-24T11:44:29.713Z", "total": 26.1 },
-        { "createdAt": "2025-08-24T11:56:29.713Z", "total": 36.1 },
-        { "createdAt": "2025-08-25T11:44:29.713Z", "total": 26.1 },
-        { "createdAt": "2025-08-25T09:15:03.929Z", "total": 214.2 },
-        { "createdAt": "2025-08-25T09:14:35.923Z", "total": 421.6 },
-        { "createdAt": "2025-08-25T11:44:29.713Z", "total": 26.1 },
-        { "createdAt": "2025-08-25T11:56:29.713Z", "total": 36.1 },
-        { "createdAt": "2025-08-25T11:30:29.713Z", "total": 110.1 }
+        { "createdAt": "2026-08-20T08:46:58.239Z", "total": 145.6 },
+        { "createdAt": "2026-08-22T08:46:21.818Z", "total": 97.2 },
+        { "createdAt": "2026-08-22T08:45:59.587Z", "total": 54.4 },
+        { "createdAt": "2026-08-23T09:15:03.929Z", "total": 214.2 },
+        { "createdAt": "2026-08-23T09:14:35.923Z", "total": 421.6 },
+        { "createdAt": "2026-08-23T11:44:29.713Z", "total": 26.1 },
+        { "createdAt": "2026-08-24T09:15:03.929Z", "total": 214.2 },
+        { "createdAt": "2026-08-24T09:14:35.923Z", "total": 421.6 },
+        { "createdAt": "2026-08-24T11:44:29.713Z", "total": 26.1 },
+        { "createdAt": "2026-08-24T11:56:29.713Z", "total": 36.1 },
+        { "createdAt": "2026-08-25T11:44:29.713Z", "total": 26.1 },
+        { "createdAt": "2026-08-25T09:15:03.929Z", "total": 214.2 },
+        { "createdAt": "2026-08-25T09:14:35.923Z", "total": 421.6 },
+        { "createdAt": "2026-08-25T11:44:29.713Z", "total": 26.1 },
+        { "createdAt": "2026-08-25T11:56:29.713Z", "total": 36.1 },
+        { "createdAt": "2026-08-25T11:30:29.713Z", "total": 110.1 } 
     ]
 }
 
