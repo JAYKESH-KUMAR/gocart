@@ -9,6 +9,7 @@ import Stripe from "stripe";
 export async function POST(request) {
 
     try {
+        console.log("STEP 1");
 
         const { userId, has } = getAuth(request);
 
@@ -25,6 +26,7 @@ export async function POST(request) {
             couponCode,
             paymentMethod
         } = await request.json();
+        console.log("STEP 2");
 
         // Validate Order Data
 
@@ -42,6 +44,7 @@ export async function POST(request) {
         }
 
         // Check Coupon
+        console.log("STEP 3");
 
         let coupon = null;
 
@@ -116,6 +119,7 @@ export async function POST(request) {
                 where: {
                     id: item.id
                 }
+
             });
 
             if (!product) continue;
@@ -131,6 +135,8 @@ export async function POST(request) {
                 price: product.price
             });
         }
+        console.log("STEP 4");
+        console.log("ordersByStore size:", ordersByStore.size);
 
         let orderIds = [];
         let fullAmount = 0;
@@ -139,6 +145,7 @@ export async function POST(request) {
         // Create Orders
 
         for (const [storeId, sellerItems] of ordersByStore.entries()) {
+            console.log("STEP 5");
 
             let total = sellerItems.reduce(
                 (acc, item) => acc + item.price * item.quantity,
@@ -159,8 +166,10 @@ export async function POST(request) {
             }
 
             fullAmount += parseFloat(total.toFixed(2));
+            console.log("STEP 6");
 
             const order = await prisma.order.create({
+
 
                 data: {
                     userId,
@@ -185,13 +194,14 @@ export async function POST(request) {
                     }
                 }
             });
+            console.log("STEP 7");
 
             orderIds.push(order.id);
         }
 
         if (paymentMethod === 'STRIPE') {
-            const stripe =new  Stripe(process.env.STRIPE_SECRET_KEY);
-            const origin  = await request.headers.get('origin');
+            const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+            const origin = await request.headers.get('origin');
 
             const session = await stripe.checkout.sessions.create({
                 payment_method_types: ['card'],
@@ -219,7 +229,7 @@ export async function POST(request) {
                     appId: 'gocart'
                 }
             });
-            return NextResponse.json({ session});
+            return NextResponse.json({ session });
 
         }
 
