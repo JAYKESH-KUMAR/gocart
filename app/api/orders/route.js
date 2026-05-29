@@ -168,6 +168,10 @@ export async function POST(request) {
             fullAmount += parseFloat(total.toFixed(2));
             console.log("STEP 6");
 
+         
+            
+               console.log("CREATING ORDER");
+
             const order = await prisma.order.create({
 
 
@@ -178,7 +182,16 @@ export async function POST(request) {
 
                     isCouponUsed: coupon ? true : false,
 
-                    coupon: coupon ? coupon : {},
+                    coupon: coupon ? {
+                        code: coupon.code,
+                        discount: coupon.discount,
+                        description: coupon.description,
+                        forMember: coupon.forMember,
+                        forNewUser: coupon.forNewUser,
+                        isPublic: coupon.isPublic,
+                        expiresAt: coupon.expiresAt,
+                    }
+                    :{},
 
                     paymentMethod,
 
@@ -194,6 +207,8 @@ export async function POST(request) {
                     }
                 }
             });
+
+            console.log("ORDER CREATED");
             console.log("STEP 7");
 
             orderIds.push(order.id);
