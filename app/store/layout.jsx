@@ -5,13 +5,10 @@ export const metadata = {
     description: "GoCart. - Store Dashboard",
 };
 
-export default function RootAdminLayout({ children }) {
-
+export default function RootStoreLayout({ children }) {
     return (
-        <>
-            <StoreLayout>
-                {children}
-            </StoreLayout>
-        </>
+        <StoreLayout>
+            {children}
+        </StoreLayout>
     );
 }

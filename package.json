@@ -10,7 +10,8 @@
     "postinstall": "prisma generate"
   },
   "dependencies": {
-    "@clerk/nextjs": "^7.3.7",
+    "@clerk/backend": "^3.4.13",
+    "@clerk/nextjs": "^7.4.1",
     "@neondatabase/serverless": "^1.1.0",
     "@prisma/adapter-neon": "^6.8.2",
     "@prisma/client": "^6.8.2",
@@ -27,6 +28,7 @@
     "react-hot-toast": "^2.5.2",
     "react-redux": "^9.2.0",
     "recharts": "^3.1.2",
+    "stripe": "^22.2.0",
     "ws": "^8.20.1"
   },
   "devDependencies": {

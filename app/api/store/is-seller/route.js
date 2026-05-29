@@ -22,4 +22,4 @@ export async function GET(request) {
         console.error(error);
         return NextResponse.json({error:error.code || error.message}, {status:400})
     }
-}
+}         

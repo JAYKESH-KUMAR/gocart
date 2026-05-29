@@ -1,27 +1,34 @@
 import prisma from '@/lib/prisma';
 
-
 const authSeller = async (userId) => {
     try {
+        console.log("CLERK USER ID:", userId);
+
+        if (!userId) return false;
+
         const user = await prisma.user.findUnique({
-            where: { id:userId},
-            include: { store: true},
+            where: { id: userId },
+            include: { store: true },
+        });
 
-        })
-         if(user.store){
-            if(user.store.status === 'approved'){
-                return user.store.id
+        console.log("DB USER:", user);
+        console.log("STORE:", user?.store);
+        console.log("STATUS:", user?.store?.status);
 
-            }
-         }else{
-            return false
-         }
-        
+        if (!user || !user.store) {
+            return false;
+        }
+
+        if (user.store.status === 'approved') {
+            return user.store.id;
+        }
+
+        return false;
+
     } catch (error) {
-        console.error(error)
-        return false
-        
+        console.error(error);
+        return false;
     }
-}
+};
 
-export default authSeller
+export default authSeller;

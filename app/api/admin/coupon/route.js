@@ -17,25 +17,37 @@ export async function POST(request) {
 
     const { coupon } = await request.json();
     coupon.code = coupon.code.toUpperCase();
-    await prisma.coupon.create({ data: coupon }).then(async (coupon) => {
-        //Run Inngest function to delete coupon on expiry
-        await inngest.send({
-            name: "app/coupon.expired",
-            data: {
-                code: coupon.code,
-                expires_at: coupon.expiresAt
+    const existingCoupon = await prisma.coupon.findUnique({ where: { code: coupon.code } });
+    if (existingCoupon) {
+        return NextResponse.json({ error: "Coupon with this code already exists" }, { status: 400 });
+    }
+
+    const createdCoupon = await prisma.coupon.create({ data: coupon });
+    //Run Inngest function to delete coupon on expiry
+    await inngest.send({
+        name: "app/coupon.expired",
+        data: {
+            code: createdCoupon.code,
+                expires_at: createdCoupon.expiresAt
             }
         });
 
         return NextResponse.json({ message: "Coupon added successfully" });
-    });
+    
     } catch (error) {
         console.error(error);
+        if(error.code === "P2002"){
+            return NextResponse.json({ error: "Coupon with this code already exists" }, { status: 400 });
+        }
         return NextResponse.json({ error: error.code || error.message }, { status: 400 });
     }
-
-
 }
+
+    
+
+
+
+
 
 //delete coupon /api/coupon/:id=couponId
 export async function DELETE(request){
