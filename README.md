@@ -1,85 +1,154 @@
-<div align="center">
-  <h1><img src="https://gocart-gs.vercel.app/favicon.ico" width="20" height="20" alt="GoCart Favicon">
-   GoCart</h1>
-  <p>
-    An open-source multi-vendor e-commerce platform built with Next.js and Tailwind CSS.
-  </p>
-  <p>
-    <a href="https://github.com/JaykeshDev/goCart/blob/main/LICENSE.md"><img src="https://img.shields.io/github/license/JaykeshDev/goCart?style=for-the-badge" alt="License"></a>
-    <a href="https://github.com/JaykeshDev/goCart/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge" alt="PRs Welcome"></a>
-    <a href="https://github.com/JaykeshDev/goCart/issues"><img src="https://img.shields.io/github/issues/JaykeshDev/goCart?style=for-the-badge" alt="GitHub issues"></a>
-  </p>
-</div>
+# GoCart - Multi Vendor E-Commerce Platform
 
----
+🚀 Live Demo: https://gocart-one-cyan.vercel.app/
 
-## 📖 Table of Contents
+## Overview
 
-- [✨ Features](#-features)
-- [🛠️ Tech Stack](#-tech-stack)
-- [🚀 Getting Started](#-getting-started)
-- [🤝 Contributing](#-contributing)
-- [📜 License](#-license)
+GoCart is a full-stack multi-vendor e-commerce platform where customers can browse products, manage carts, place orders, and track purchases. Vendors can create stores, add products, manage inventory, and process orders through a dedicated seller dashboard.
+
+The platform also includes AI-powered product information generation, secure authentication, coupon management, ratings & reviews, and Stripe payment integration.
 
 ---
 
 ## Features
 
-- **Multi-Vendor Architecture:** Allows multiple vendors to register, manage their own products, and sell on a single platform.
-- **Customer-Facing Storefront:** A beautiful and responsive user interface for customers to browse and purchase products.
-- **Vendor Dashboards:** Dedicated dashboards for vendors to manage products, view sales analytics, and track orders.
-- **Admin Panel:** A comprehensive dashboard for platform administrators to oversee vendors, products, and commissions.
+### Customer Features
 
-## 🛠️ Tech Stack <a name="-tech-stack"></a>
+* User Authentication with Clerk
+* Browse Products
+* Product Categories
+* Add to Cart
+* Address Management
+* Apply Coupons
+* Order Placement
+* Order History
+* Ratings & Reviews
 
-- **Framework:** Next.js
-- **Styling:** Tailwind CSS
-- **UI Components:** Lucide React for icons
-- **State Management:** Redux Toolkit
+### Seller Features
 
-## 🚀 Getting Started <a name="-getting-started"></a>
+* Create and Manage Store
+* Seller Dashboard
+* Add/Edit Products
+* AI Generated Product Details
+* Inventory Management
+* Order Management
 
-First, install the dependencies. We recommend using `npm` for this project.
+### Admin Features
+
+* Store Approval System
+* Coupon Management
+* Platform Monitoring
+
+---
+
+## Tech Stack
+
+### Frontend
+
+* Next.js 15
+* React.js
+* Tailwind CSS
+* Axios
+
+### Backend
+
+* Next.js API Routes
+* Prisma ORM
+
+### Database
+
+* PostgreSQL
+* Neon Database
+
+### Authentication
+
+* Clerk Authentication
+
+### Payments
+
+* Stripe
+* Cash on Delivery (COD)
+
+### AI Integration
+
+* OpenAI API
+
+### Deployment
+
+* Vercel
+
+---
+
+## Screenshots
+
+### Home Page
+![Home Page](screenshots/home-page.png)
+
+### Shop Page
+![Shop Page](screenshots/shop-page.png)
+
+### Product Details
+![Product](screenshots/product-page.png)
+
+### Cart
+![Cart](screenshots/cart-page.png)
+
+### Seller Dashboard
+![Dashboard](screenshots/seller-dashboard.png)
+
+### AI Product Generation
+![AI](screenshots/add-product-page.png)
+
+### Orders
+![Orders](screenshots/orders-page.png)
+
+
+
+---
+
+## Installation
 
 ```bash
+git clone <your-repository-url>
+cd gocart
 npm install
-```
-
-Then, run the development server:
-
-```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/(public)/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Outfit](https://vercel.com/font), a new font family for Vercel.
+Open http://localhost:3000
 
 ---
 
-## 🤝 Contributing <a name="-contributing"></a>
+## Environment Variables
 
-We welcome contributions! Please see our [CONTRIBUTING.md](./CONTRIBUTING.md) for more details on how to get started.
+```env
+DATABASE_URL=
+DIRECT_URL=
+
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+
+OPENAI_API_KEY=
+OPENAI_MODEL=
+
+STRIPE_SECRET_KEY=
+STRIPE_WEBHOOK_SECRET=
+```
 
 ---
 
-## 📜 License <a name="-license"></a>
+## Author
 
-This project is licensed under the MIT License. See the [LICENSE.md](./LICENSE.md) file for details.
+Jaykesh Kumar
 
-## Learn More
+LinkedIn:
+https://www.linkedin.com/in/jaykesh-kumar-553070325/
 
-To learn more about Next.js, take a look at the following resources:
+GitHub:
+https://github.com/JAYKESH-KUMAR
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Live Project
+
+https://gocart-one-cyan.vercel.app/
